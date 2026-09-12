@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONTAKTY - Sklepní Scéna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul id="navLinks">
+        <li><a href="KONTAKTY.html">KONTAKTY</a></li>
+        <li><a href="AKCE.html">AKCE</a></li>
+        <li><a href="CREW.html">CREW</a></li>
+        <li><a href="VSTUPENKY.html">VSTUPENKY</a></li>
+    </ul>
+
+    <div class="menu-icon" id="menuIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
+<section class="contacts">
+    <h1>NAPIŠ NÁM</h1>
+
+    <div class="main-info">
+        <p>BOOKING & INFO</p>
+        <p>Email: <a href="mailto:sklepni.scena@gmail.com">sklepni.scena@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/sklepni_scena_" target="_blank">@sklepni_scena_</a></p>
+    </div>
+
+    <h2 style="color: white; border-bottom: 1px solid #333; display: inline-block; padding-bottom: 10px; margin-bottom: 30px;">NAŠE INSTAGRAMY</h2>
+
+    <div class="ig-grid">
+        <div class="ig-card">
+            <h3>MATY</h3>
+            <a href="https://instagram.com/matyas_hornik" class="ig-btn" target="_blank">Sledovat</a>
+        </div>
+
+        <div class="ig-card">
+            <h3>ONDRA</h3>
+            <a href="https://instagram.com/ondra_rizecek" class="ig-btn" target="_blank">Sledovat</a>
+        </div>
+
+        <div class="ig-card">
+            <h3>TOM</h3>
+            <a href="https://instagram.com/hanzaltom" class="ig-btn" target="_blank">Sledovat</a>
+        </div>
+
+        <div class="ig-card">
+            <h3>VESELKA SOUNDSYSTEM</h3>
+            <a href="https://instagram.com/vesellka_soundsystem" class="ig-btn" target="_blank">Sledovat</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+            <p>Studentské koncerty s pořádnou atmosférou.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>RYCHLÉ ODKAZY</h3>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="AKCE.html">Akce</a></li>
+                <li><a href="KONTAKTY.html">Kontakty</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h3>SLEDUJ NÁS</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com/sklepni_scena_" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sklepní Scéna. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+<script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuIcon.classList.toggle('toggle');
+    });
+
+    // Zavřít menu po kliknutí na odkaz
+    document.querySelectorAll('#navLinks a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuIcon.classList.remove('toggle');
+        });
+    });
+</script>
+
+</body>
+</html>

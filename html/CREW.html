@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREW - Sklepní Scéna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="html/index.html">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul id="navLinks">
+        <li><a href="KONTAKTY.html">KONTAKTY</a></li>
+        <li><a href="AKCE.html">AKCE</a></li>
+        <li><a href="CREW.html">CREW</a></li>
+        <li><a href="VSTUPENKY.html">VSTUPENKY</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
+<section class="crew">
+    <h1>NAŠE CREW</h1>
+    <p style="margin-bottom: 30px;">Tým, který pro vás tvoří Sklepní scénu.</p>
+
+    <div class="crewGallery">
+        <div class="crop">
+            <img src="../images/498636713_24251716081096563_7170542626999908625_n.jpg" alt="Veselka">
+            <div class="crewNames">
+                <h2>Veselka</h2>
+                <h3>SoundSystem & Tech</h3>
+            </div>
+        </div>
+
+        <div class="crop">
+            <img src="../images/IMG_8906.JPG" alt="Maty">
+            <div class="crewNames">
+                <h2>Maty</h2>
+                <h3>Zvuk & organizátor </h3>
+            </div>
+        </div>
+
+        <div class="crop">
+            <img src="../images/onasekmanasek.jpg" alt="Ondra">
+            <div class="crewNames">
+                <h2>Ondra</h2>
+                <h3>Světla & organizátor </h3>
+            </div>
+        </div>
+
+        <div class="crop">
+            <img src="../images/tominkabobinka.jpg" alt="Tom">
+            <div class="crewNames">
+                <h2>Tom</h2>
+                <h3>Produkce a Organizátor</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+            <p>Studentské koncerty s pořádnou atmosférou.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>RYCHLÉ ODKAZY</h3>
+        <ul>
+            <li><a href="html/KONTAKTY.html">KONTAKTY</a></li>
+            <li><a href="html/AKCE.html">AKCE</a></li>
+            <li><a href="html/CREW.html">CREW</a></li>
+            <li><a href="html/VZTUPENKY.html">VSTUPENKY</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h3>SLEDUJ NÁS</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com/sklepni_scena_" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sklepní Scéna. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+<script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu (otevřít/zavřít)
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuIcon.classList.toggle('toggle');
+    });
+
+    // Zavřít menu, když klikneš na odkaz (aby nezaclánělo při přechodu)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuIcon.classList.remove('toggle');
+        });
+    });
+</script>
+
+</body>
+</html>

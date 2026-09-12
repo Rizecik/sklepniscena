@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKCE - Sklepní Scéna</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul id="navLinks">
+        <li><a href="KONTAKTY.html">KONTAKTY</a></li>
+        <li><a href="AKCE.html">AKCE</a></li>
+        <li><a href="CREW.html">CREW</a></li>
+        <li><a href="VSTUPENKY.html">VSTUPENKY</a></li>
+    </ul>
+
+    <div class="menu-icon" id="menuIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
+<section class="akce">
+    <h1>KALENDÁŘ AKCÍ</h1>
+
+    <div class="events-container">
+
+        <div class="event-card upcoming">
+            <div class="event-image-placeholder">
+                <img src="../images/otaznik.jpg" alt="Plakát nové akce" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+
+            <div class="event-info">
+                <div class="event-status">NADCHÁZEJÍCÍ</div>
+                <div class="event-date">BUDE OZNÁMENO</div>
+
+                <div class="lineup">
+                    <h3>LINE-UP</h3>
+                    <ul>
+                        <li>PŘIPRAVUJEME</li>
+                        <li>SLEDUJ INSTAGRAM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-image-placeholder">
+                <img src="../images/13.2..jpg" alt="Plakát akce" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+
+            <div class="event-info">
+                <div class="event-status" style="background-color: #555; color: white;">PROBĚHLO</div>
+                <div class="event-date">13. 2. 2026</div>
+
+                <div class="lineup">
+                    <h3>VYSTUPOVALI</h3>
+                    <ul>
+                        <li>YOMAMA BAND</li>
+                        <li>ALKATRAZ BAND</li>
+                        <li>2MGS</li>
+                        <li>METRO GANG</li>
+                        <li>DEFCOM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-image-placeholder">
+                <img src="../images/sklep10.10.jpg" alt="Fotka z akce" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+
+            <div class="event-info">
+                <div class="event-status" style="background-color: #555; color: white;">PROBĚHLO</div>
+                <div class="event-date">10. 10. 2025</div>
+
+                <div class="lineup">
+                    <h3>VYSTUPOVALI</h3>
+                    <ul>
+                        <li>FINERS BAND</li>
+                        <li>ALTGAZE BAND</li>
+                        <li>MÍSTNÍ NÁRODNÍ VÝBOR</li>
+                        <li>ALMARA LIT</li>
+                        <li>JOE FRÁCEK</li>
+                        <li>RAVE MAN TONY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../images/Adobe Express - file.png" alt="Logo">
+            <p>Studentské koncerty s pořádnou atmosférou.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>RYCHLÉ ODKAZY</h3>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="AKCE.html">Akce</a></li>
+                <li><a href="KONTAKTY.html">Kontakty</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h3>SLEDUJ NÁS</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com/sklepni_scena_" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sklepní Scéna. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+<script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuIcon.classList.toggle('toggle');
+    });
+
+    // Zavřít menu při kliknutí na odkaz
+    document.querySelectorAll('#navLinks a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuIcon.classList.remove('toggle');
+        });
+    });
+</script>
+
+</body>
+</html>
